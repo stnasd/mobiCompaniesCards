@@ -1,0 +1,65 @@
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  background-color: #efefef;
+}
+.main {
+  margin: 0px auto;
+}
+.main__header {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background-color: #fff;
+}
+.main__title {
+  color: #2688eb;
+  font-size: 6vw;
+  align-items: center;
+}
+/* ------------------------------------MODAL------------------------- */
+.modal {
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.modal__content {
+  margin-bottom: 25vw;
+  width: 95vw;
+  height: 30vw;
+  background-color: #fff;
+  border-radius: 4vw;
+}
+.first__button {
+  width: 50vw;
+  height: 10vw;
+  margin-top: 8vw;
+  border-radius: 3vw;
+  background-color: #2688eb;
+  color: #fff;
+  font-size: 4vw;
+}
+.modal__content p {
+  margin-top: 3vw;
+  font-size: 5vw;
+}
+.last__button {
+  position: absolute;
+  bottom: 25vw;
+  left: 45vw;
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  align-items: center;
+  line-height: 50px;
+  font-size: 5vw;
+}

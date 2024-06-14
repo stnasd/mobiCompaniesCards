@@ -1,0 +1,13 @@
+.mainLogo {
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainLogo img {
+  display: inline-block;
+  width: 50vw;
+}

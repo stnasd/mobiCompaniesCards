@@ -1,0 +1,43 @@
+.portal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 500;
+  padding: 0;
+  border-radius: 0;
+}
+
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.modal {
+  background-color: rgb(106, 109, 109);
+  position: fixed;
+  border-radius: 8px;
+  padding: 24px;
+  animation: appearanceModal 0.2s ease-in-out;
+}
+
+.btnClose {
+  position: absolute;
+  top: 8vw;
+  right: 20vw;
+}
+
+@keyframes appearanceModal {
+  0% {
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
