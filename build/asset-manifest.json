@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c8c9271.css",
-    "main.js": "/static/js/main.54aaef8a.js",
+    "main.css": "/static/css/main.dc531da5.css",
+    "main.js": "/static/js/main.c56b6487.js",
     "static/media/SegoeUIRegular.eot": "/static/media/SegoeUIRegular.cd5e42e17c48e0e316b0.eot",
     "static/media/SegoeUIRegular.ttf": "/static/media/SegoeUIRegular.1c5a6bfd4ec7a1bbe4ac.ttf",
     "static/media/SegoeUIBold.eot": "/static/media/SegoeUIBold.4fd27ee5f0f2334532eb.eot",
@@ -12,11 +12,11 @@
     "static/media/icon-trash-10609426.svg": "/static/media/icon-trash-10609426.584dee7fd2c1070c104f951f8a14d566.svg",
     "static/media/icon-eye-158746.svg": "/static/media/icon-eye-158746.f97e1285f23b6c0ba9eb563f858e1eb1.svg",
     "index.html": "/index.html",
-    "main.7c8c9271.css.map": "/static/css/main.7c8c9271.css.map",
-    "main.54aaef8a.js.map": "/static/js/main.54aaef8a.js.map"
+    "main.dc531da5.css.map": "/static/css/main.dc531da5.css.map",
+    "main.c56b6487.js.map": "/static/js/main.c56b6487.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c8c9271.css",
-    "static/js/main.54aaef8a.js"
+    "static/css/main.dc531da5.css",
+    "static/js/main.c56b6487.js"
   ]
 }
