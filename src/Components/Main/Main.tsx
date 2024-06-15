@@ -61,6 +61,7 @@ export function Main() {
             setErrorStatus("Произошла ошибка при выполнении запроса");
           }
           setLoadItemsStatus(() => "rejected");
+          setshowModal(true);
         }
         setShowSpinner(false);
       });
@@ -69,7 +70,7 @@ export function Main() {
     return () => {
       clearTimeout(timer);
     };
-  }, [trigger, indentation, showMainLogo, fetching]);
+  }, [trigger, indentation, showMainLogo, fetching, showModal]);
 
   const renderItems = data?.companies ? (
     data?.companies.map((item) => {
@@ -103,7 +104,7 @@ export function Main() {
   const handleCloseModal = () => {
     setErrorStatus("");
     setLoadItemsStatus("pending");
-    setShowSpinner(true);
+    setshowModal(false);
   };
 
   return (
@@ -125,15 +126,16 @@ export function Main() {
           </div>
         </ModalWindow>
       )}
-      {loadItemsStatus !== "fulfilled" &&
-        loadItemsStatus !== "rejected" &&
-        !showMainLogo && <Spinner />}
-      {!showMainLogo && loadItemsStatus !== "pending" && (
+      {!showMainLogo && (
         <main className={styles.main} ref={elementRef}>
           <div className={styles.main__header}>
             <h1 className={styles.main__title}>Управление картами</h1>
           </div>
-          <div className={styles.main__block}>{renderItems}</div>
+          {loadItemsStatus === "pending" ? (
+            <Spinner />
+          ) : (
+            <div className={styles.main__block}>{renderItems}</div>
+          )}
           {showSpinner && <Spinner />}
         </main>
       )}
