@@ -19,8 +19,8 @@
 
 .modal {
   background-color: rgb(106, 109, 109);
+  height: 100vh;
   position: fixed;
-  border-radius: 8px;
   padding: 24px;
   animation: appearanceModal 0.2s ease-in-out;
 }

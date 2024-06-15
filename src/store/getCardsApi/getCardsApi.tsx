@@ -3,7 +3,7 @@ import { IRepoEntry, PropsQuery } from "../types";
 
 export const getCardsApi = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://devapp.bonusmoney.pro/mobileapp",
+    baseUrl: "http://devapp.bonusmoney.pro/mobileapp",
     prepareHeaders: (headers) => {
       headers.set("TOKEN", "123");
       return headers;
